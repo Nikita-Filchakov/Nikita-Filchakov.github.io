@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let zombie = document.createElement("img");
+    zombie.src = "zombi-normal.gif";
+    document.body.append(zombie);
+
+    let left = 100;
+    let step = 1;
+
+    zombie.style.position = 'fixed';
+    zombie.style.top = '100px'; 
+    zombie.style.left = left + 'px';
+    function Move(){
+        left = left + step;
+        zombie.style.left = left + 'px';
+    }
+
+    let mydiv = document.createElement("div")
+    document.body.append(mydiv)
+
+    setInterval(Move, 100);
+
+    document.addEventListener(
+        "keyup",
+        (event) => {
+            const keyname = event.key
+
+            if (keyname === "Control"){
+                
+                function Move(){
+                    left = left + step;
+                    zombie.style.left = left + 'px';
+                    mydiv.innerText = left
+                }
+
+                setInterval(Move, 100);
+                return
+            }
+        },
+        false,
+    )
+</script>
+</body>
+</html>
