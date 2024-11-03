@@ -5,10 +5,32 @@
 		background-image: url('508440_1.jpg');
 	}
 
+	.navbar {
+	  overflow: hidden;
+	  background-color: rgba(0, 0, 0, 0.4);
+	  filter: drop-shadow(0px 0px 4px #000000);
+	}
+
+	.navbar a {
+	  float: left;
+	  font-size: 16px;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  transition-duration: 0.4s;
+	  font-family: fantasy;
+	}
+
+	.navbar a:hover{
+	  background-color: #3B1E54;
+	  filter: drop-shadow(0px 0px 4px #3B1E54);
+	  padding: 18px 16px;
+	}
+
 	h1 {
 		font-family: fantasy;
 		color: rgba(0,0,0,0.8);
-
 	}
 
 	.button {
@@ -91,9 +113,10 @@
 
 	.container {
 	  position: relative;
-	  width: 100%;
 	  max-width: 400px;
 	  max-height: 200px;
+	  margin: 4px 2px;
+	  display: inline-block;
 	}
 
 	.container img {
@@ -137,15 +160,26 @@
 </style>
 </head>
 <body>
+	<div class="navbar">
+  		<a href="Home.html">Главная</a>
+  		<a href="Games.html">Игры</a>
+  		<a href="Index.html">Для Учёбы</a>
+	</div>
 	<h1>Сайт студента Фильчакова Никита 3419в</h1>
 	<button type="button" class="button button1" onclick="location.href='22oct24.html'">Посетить 22 октября 2024</button>
 	<button type="button" class="button button2" onclick="location.href='25oct24.html'">Посетить 25 октября 2024</button>
 	<button type="button" class="button button3" onclick="location.href='28oct24.html'">Посетить 28 октября 2024</button>
 	<button type="button" class="button button4" onclick="location.href='29oct24.html'">Играть 29 октября 2024</button>
 	<button type="button" class="button button5" onclick="location.href='01nov24.html'">Играть 1 ноября 2024</button>
-	<div class="container">
-  		<img src="508440_17.jpg">
-  		<button class="btn">Тестовая кнопка</button>
+	<div style="hori-align: ;">
+		<div class="container">
+	  		<img src="508440_17.jpg">
+	  		<button class="btn">Тестовая кнопка</button>
+		</div>
+		<div class="container">
+	  		<img src="508440_17.jpg">
+	  		<button class="btn">Тестовая кнопка</button>
+		</div>
 	</div>
 </body>
 </html>
