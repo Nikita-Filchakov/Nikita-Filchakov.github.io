@@ -7,6 +7,8 @@
 
 	h1 {
 		font-family: fantasy;
+		color: rgba(0,0,0,0.8);
+
 	}
 
 	.button {
@@ -86,6 +88,52 @@
   		padding: 20px 36px;
   		filter: drop-shadow(0px 0px 4px #3B1E54);
 	}
+
+	.container {
+	  position: relative;
+	  width: 100%;
+	  max-width: 400px;
+	  max-height: 200px;
+	}
+
+	.container img {
+	  width: 100%;
+	  height: 100%;
+	  height: auto;
+	  border-radius: 10px;
+	  filter: drop-shadow(0px 0px 4px rgb(0,0,0));
+	}
+
+	.container .btn {
+		position: absolute;
+		top: 90%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		color: white;
+		font-size: 16px;
+		cursor: pointer;
+  		border-radius: 5px;
+  		padding: 16px 32px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-family: fantasy;
+  		font-size: 16px;
+  		margin: 4px 2px;
+  		transition-duration: 0.4s;
+  		background-size: cover;
+  		background-color: rgba(50,50,50,0.5);
+  		color: #FFFFFF; 
+  		border: 2px solid #FFFFFF;
+	}
+
+	.container .btn:hover {
+	  	background-color: rgba(255,255,255,0.5);
+  		color: rgb(100, 100, 100);
+  		padding: 20px 36px;
+  		filter: drop-shadow(0px 0px 4px rgb(255,255,255));
+	}
 </style>
 </head>
 <body>
@@ -95,5 +143,9 @@
 	<button type="button" class="button button3" onclick="location.href='28oct24.html'">Посетить 28 октября 2024</button>
 	<button type="button" class="button button4" onclick="location.href='29oct24.html'">Играть 29 октября 2024</button>
 	<button type="button" class="button button5" onclick="location.href='01nov24.html'">Играть 1 ноября 2024</button>
+	<div class="container">
+  		<img src="508440_17.jpg">
+  		<button class="btn">Тестовая кнопка</button>
+	</div>
 </body>
 </html>
