@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="TakeColor()">Изменить цвет</button>
+    <script>
+        function getRandomArbitrary(min, max) {
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+        
+        let box1 = document.createElement('div');
+        box1.style.width = '200px';
+        box1.style.height = '300px';
+        document.body.append(box1);
+
+        function TakeColor() {
+            let rnd = getRandomArbitrary(1, 255)
+            let rnd2 = getRandomArbitrary(1, 255)
+            let rnd3 = getRandomArbitrary(1, 255)
+            console.log(rnd)
+
+            box1.style.backgroundColor = 'rgb('+rnd+','+rnd2+','+rnd3+')';
+        }
+    </script>
+</body>
+</html>
