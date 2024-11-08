@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Click()">Создать</button>
+    <script>
+        let box = document.createElement("div");
+        document.body.append(box)
+        function CreateBox(size) {
+            box.style.width = size + 'px';
+            box.style.height = size + 'px';
+            box.style.border = '5px solid green'
+            box.style.borderRadius = size / 5 + 'px'
+            box.innerText = "Привет! Размер: " + size
+            box.style.textAlign = 'center'
+        }
+
+        function Click() {
+            let rnd = Math.floor(Math.random() * 500)
+            CreateBox(rnd)
+        }
+    </script>
+</body>
+</html>
